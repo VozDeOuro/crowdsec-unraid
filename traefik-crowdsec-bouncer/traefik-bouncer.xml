@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bouncer_traefik</Name>
+  <Repository>fbonalair/traefik-crowdsec-bouncer</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/fbonalair/traefik-crowdsec-bouncer</Project>
+  <Overview>Aim to implement a CrowdSec bouncer for the router Traefik to block malicious IP to access your services. For this it leverages Traefik v2 ForwardAuth middleware and query CrowdSec with client IP. If the client IP is on ban list, it will get a http code 403 response. Otherwise, request will continue as usual.</Overview>
+  <Category>Security:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://pbs.twimg.com/profile_images/1308682916332003329/arXvfo5u_400x400.jpg</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1649578430</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Aim to implement a CrowdSec bouncer for the router Traefik to block malicious IP to access your services. For this it leverages Traefik v2 ForwardAuth middleware and query CrowdSec with client IP. If the client IP is on ban list, it will get a http code 403 response. Otherwise, request will continue as usual.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</Value>
+      <Name>CROWDSEC_BOUNCER_API_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>release</Value>
+      <Name>GIN_MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.0.10:8081</Value>
+      <Name>CROWDSEC_AGENT_HOST</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="CROWDSEC_BOUNCER_API_KEY" Target="CROWDSEC_BOUNCER_API_KEY" Default="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" Mode="" Description="Container Variable: CROWDSEC_BOUNCER_API_KEY" Type="Variable" Display="always" Required="false" Mask="false">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</Config>
+  <Config Name="GIN_MODE" Target="GIN_MODE" Default="" Mode="" Description="Container Variable: GIN_MODE" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
+  <Config Name="CROWDSEC_AGENT_HOST" Target="CROWDSEC_AGENT_HOST" Default="192.168.0.10:8081" Mode="" Description="Container Variable: CROWDSEC_AGENT_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.10:8081</Config>
+</Container>
