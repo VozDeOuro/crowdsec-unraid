@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://crowdsec.net/</Project>
-  <Overview>CrowdSec is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks & share signals across the community.:&#xD;</Overview>
+  <Overview>CrowdSec is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks &amp; share signals across the community.:&#xD;</Overview>
   <Category>Security:</Category>
   <WebUI>https://app.crowdsec.net/overview</WebUI>
   <TemplateURL/>
